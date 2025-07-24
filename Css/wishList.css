@@ -1,0 +1,205 @@
+#wishlist {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 5px 5px 10px 10px;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 350px;
+    max-height: 80vh;
+    border: 1px solid;
+    overflow-y: auto;
+    transition: transform 0.3s ease, visibility 0.3s ease, opacity 0.3s ease;
+    transform: translateX(100%);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fdf6f1;
+}
+
+#wishlist.visible {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+.prodotti {
+    font-size: 1.2em;
+    color: #416788;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+#save, #gotoLogin {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    text-decoration: white;
+    transition: 0.3s ease;
+    background-color: #7389AE;
+}
+
+#save:hover, #gotoLogin:hover {
+    background-color: #2D3E50;
+    color:white;
+    cursor: pointer;
+    box-shadow: 0 5px 0 rgba(0,0,0,1);
+    transform: translateY(-1px);
+}
+
+#titolo {
+    font-size: 1.2em;
+    color: #416788;
+}
+
+#bottoneWishlist {
+    background: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    transition: 0.1s ease;
+}
+
+#bottoneWishlist:hover {
+    background-color: #F4AE91;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 0 rgba(0,0,0,1);
+}
+
+#overlays {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    z-index: 998;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease, opacity 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+#overlays.visible {
+    visibility: visible;
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.5);
+}
+
+#gotoLoginWishlist {
+    background: #81D2C7;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+#gotoLoginWishlist:hover {
+    background-color: #2D3E50;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 0 rgba(0,0,0,1);
+    cursor: pointer;
+}
+
+.wishlist-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 0;
+    border-bottom: 1px solid #ececec;
+    gap: 8px;
+}
+
+.wishlist-product-info {
+    flex: 1 1 auto;
+    margin-right: 8px;
+    overflow-wrap: anywhere;
+}
+
+.addToCartButton {
+    flex-shrink: 0;
+    background: #81D2C7;
+    color: #2D3E50;
+    border: none;
+    border-radius: 20px;
+    padding: 0.3em 0.6em;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addToCartButton:hover {
+    background-color: #5cc3b1;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 0 rgba(0,0,0,1);
+}
+
+#addToCart {
+    flex-shrink: 0;
+    background: #81D2C7;
+    color: #2D3E50;
+    border: none;
+    border-radius: 20px;
+    padding: 0.3em 0.6em;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+#addToCart:hover {
+    background-color: #5cc3b1;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 0 rgba(0,0,0,1);
+    cursor: pointer;
+}
+
+.removeButton, .removeWishlistButton {
+    flex-shrink: 0;
+    padding: 5px 10px;
+    border: solid 1px #fdf6f1;
+    border-radius: 50%;
+    background-color: #F4AE91;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.removeButton:hover, .removeWishlistButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1px 0 rgba(0,0,0,1);
+    cursor: pointer;
+}
+
+#spinner-container {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#spinner {
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.spin {
+    animation: spin 2s linear infinite;
+}

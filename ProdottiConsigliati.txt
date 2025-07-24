@@ -1,0 +1,4 @@
+1|Scarpe Running|49.99|Scarpe comode per correre|300|Rosso|4.2
+2|Laptop Ultra|899.00|Portatile leggero e potente|1200|Grigio|4.8
+3|Cuffie Wireless|129.50|Suono cristallino senza fili|250|Nero|4.5
+4|Fotocamera DSLR|549.00|Obiettivo 18-55mm incluso|800|Nero|4.7

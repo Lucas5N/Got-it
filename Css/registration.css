@@ -1,0 +1,117 @@
+#register {
+    background-color: #ffffff;
+    padding: 24px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 760px;
+    box-sizing: border-box;
+    margin-bottom: 63px;
+}
+
+body {
+    background-color: #fdf6f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: #2D3E50;
+    font-size: 40px;
+}
+
+.form-grid {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    column-gap: 20px;
+}
+
+.form-group {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+}
+
+label {
+    color: #2D3E50;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 13px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.checkbox {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    color: #2D3E50;
+}
+
+#RegistrationButton {
+    width: 100%;
+    background-color: #f4ae91;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#RegistrationButton:hover{
+    transform: translateY(-2px) ;
+    box-shadow: 0 5px 0 rgba(0,0,0,1) ;
+}
+
+#LoginButton{
+    width: 100%;
+    background-color: #81D2C7;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+#LoginButton:hover{
+    transform: translateY(-2px) ;
+    box-shadow: 0 5px 0 rgba(0,0,0,1) ;
+}
+
